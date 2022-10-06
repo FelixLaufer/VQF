@@ -1,16 +1,12 @@
 #ifndef _VQF_H_
 #define _VQF_H_
 
-#include "math/EigenTypes.h"
+#include "EigenTypes.h"
 
 #include <assert.h>
 #include <limits>
 #define _USE_MATH_DEFINES
 #include <math.h>
-
-
-template <size_t N>
-using VectorN = Eigen::Matrix<ScalarType, N, 1>;
 
 template <size_t N>
 class LowPass
