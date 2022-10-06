@@ -1,5 +1,5 @@
 /*
-* Based on the work of:
+* Based on the VQF approach proposed here:
 * D. Laidig, T. Seel. "VQF: Highly Accurate IMU Orientation Estimation with Bias Estimation and Magnetic Disturbance Rejection."
 * arXiv preprint, 2022. arXiv:2203.17024. https://arxiv.org/abs/2203.17024
 * Original implementation: https://github.com/dlaidig/vqf
