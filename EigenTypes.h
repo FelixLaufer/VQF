@@ -50,4 +50,7 @@ using MatrixCNxM = Eigen::Matrix<ScalarTypeC, N, M>;
 using Matrix = Eigen::Matrix<ScalarType, Eigen::Dynamic, Eigen::Dynamic>;
 using MatrixC = Eigen::Matrix<ScalarTypeC, Eigen::Dynamic, Eigen::Dynamic>;
 
+// Quaternion
+using Quaternion = Eigen::Quaternion<ScalarType>;
+
 #endif
