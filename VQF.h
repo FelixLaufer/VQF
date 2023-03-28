@@ -152,7 +152,7 @@ protected:
       if (kmInit_ * taum_ < dt_)
         kmInit_ = 0;
     }
-    deltam_ += k * wrapToPi(std::atan2(mE.x(), mE.y()) - deltam_); // Calculate heading offset, c.f. algo 1, line 18
+    deltam_ += k * wrapToPi(std::atan2(mE.y(), mE.x()) - deltam_); // Calculate heading offset, c.f. algo 1, line 18
     deltam_ = wrapToPi(deltam_); // Ensure it to stay within [-Pi, Pi]
   }
 
