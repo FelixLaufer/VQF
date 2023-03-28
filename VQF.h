@@ -91,7 +91,7 @@ public:
     , deltam_(0)
     , taua_(taua)
     , taum_(taum)
-    , km_(tau2Gain(taum_))
+    , km_(tauToGain(taum_))
     , kmInit_(1)
     , aILp_(LowPass<3>(taua_, dt_))
   {}
@@ -156,7 +156,7 @@ protected:
     deltam_ = wrapToPi(deltam_); // Ensure it to stay within [-Pi, Pi]
   }
 
-  ScalarType tau2Gain(const ScalarType& tau)
+  ScalarType tauToGain(const ScalarType& tau)
   {
     if (tau < 0)
       return 0;
